@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EB00C384-A973-4C8A-AAB7-AE2B82DB80BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BusinessLogic</RootNamespace>
+    <AssemblyName>BusinessLogic</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.2\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.2\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Abstractions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.9.7\lib\net46\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.9.7.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.5.9.7\lib\net46\Unity.Container.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adders\CategoryViewModelAdder.cs" />
+    <Compile Include="Adders\BranchViewModelAdder.cs" />
+    <Compile Include="Adders\CustomerBranchOfferViewModelAdder.cs" />
+    <Compile Include="Adders\IViewModelAdder.cs" />
+    <Compile Include="Adders\OfferPhotoViewModelAdder.cs" />
+    <Compile Include="Adders\TypeViewModelAdder.cs" />
+    <Compile Include="AdminGetter.cs" />
+    <Compile Include="AuthorizationCheckers\AddBrunchSupplierViewModelGetter.cs" />
+    <Compile Include="AuthorizationCheckers\AdminGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\ApiBrunchDetailsGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BranchUpdaterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchContactAdderChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchContactDeleterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchContactsGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchDeleterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchOfferAdderChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchPhotoAdderChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchPhotoDeleterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchPhotosGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\BrunchViewModelAdder.cs" />
+    <Compile Include="AuthorizationCheckers\CategoryAdderChecker.cs" />
+    <Compile Include="AuthorizationCheckers\CategoryGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\CategoryUpdaterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\ContactViewModelGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\CustomerBranchOfferAdderChecker.cs" />
+    <Compile Include="AuthorizationCheckers\CustomerBranchOfferViewModelAdderChecker.cs" />
+    <Compile Include="AuthorizationCheckers\CustomerSupportGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\OfferPhotoViewModelAdderChecker.cs" />
+    <Compile Include="AuthorizationCheckers\OfferPhotoViewModelGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\OfferGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\SupplierBrunchesGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\SupplierIndexGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\SupplierOffersGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\SupplierViewModelUpdaterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\TypeByCategoryGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\TypeViewModelAdderChecker.cs" />
+    <Compile Include="AuthorizationCheckers\TypeViewModelGetterChecker.cs" />
+    <Compile Include="AuthorizationCheckers\TypeViewModelUpdaterChecker.cs" />
+    <Compile Include="Converters\AddBranchConverter.cs" />
+    <Compile Include="Converters\AddNewContactConverter.cs" />
+    <Compile Include="Converters\AddTypeViewModelConverter.cs" />
+    <Compile Include="Converters\AdvertismentConverter.cs" />
+    <Compile Include="Converters\ApiBrunchConverter.cs" />
+    <Compile Include="Converters\ApiBrunchDetailsConverter.cs" />
+    <Compile Include="Converters\ApiBrunchVmConverter.cs" />
+    <Compile Include="Converters\ApiOfferConverter.cs" />
+    <Compile Include="Converters\ApiOfferDetailsConverter.cs" />
+    <Compile Include="Converters\ApiSupplierConverter.cs" />
+    <Compile Include="Converters\ApiSupplierDetailsConverter.cs" />
+    <Compile Include="Adders\BrunchOfferViewModelAdder.cs" />
+    <Compile Include="Adders\BrunchTypeViewModelAdder.cs" />
+    <Compile Include="Converters\BrunchViewModelConverter.cs" />
+    <Compile Include="Converters\ContactConverter.cs" />
+    <Compile Include="Converters\OfferPhotoConverter.cs" />
+    <Compile Include="Converters\PhotoConverter.cs" />
+    <Compile Include="Converters\SupplierIndexConverter.cs" />
+    <Compile Include="CustomerSupportGetter.cs" />
+    <Compile Include="Deleters\BrunchContactDeleter.cs" />
+    <Compile Include="Deleters\BrunchPhotoDeleter.cs" />
+    <Compile Include="Deleters\BrunchViewModelDeleter.cs" />
+    <Compile Include="Exceptions\NotAuthorizedToExecuteException.cs" />
+    <Compile Include="Exceptions\UserAlreadyRegisteredWithOffer.cs" />
+    <Compile Include="Getters\AddBrunchSupplierViewModelGetter.cs" />
+    <Compile Include="Getters\ApiBrunchDetailsViewModelGetter.cs" />
+    <Compile Include="Getters\ApiBrunchViewModelGetter.cs" />
+    <Compile Include="Getters\ApiOfferDetailsViewModelGetter.cs" />
+    <Compile Include="Getters\ApiOfferListViewModelGetter.cs" />
+    <Compile Include="Getters\BrunchCategoryViewModelGetter.cs" />
+    <Compile Include="Adders\BrunchContactViewModelAdder.cs" />
+    <Compile Include="Getters\BrunchDetailsGetter.cs" />
+    <Compile Include="Converters\BrunchConverter.cs" />
+    <Compile Include="Adders\BrunchPhotosViewModelAdder.cs" />
+    <Compile Include="BusUnityConfig.cs" />
+    <Compile Include="Getters\BrunchContactViewModelListGetter.cs" />
+    <Compile Include="Getters\BrunchOfferViewModelGetter.cs" />
+    <Compile Include="Converters\CategoryConverter.cs" />
+    <Compile Include="CustomerRegisterer.cs" />
+    <Compile Include="Getters\CategoryViewModelGetter.cs" />
+    <Compile Include="AuthorizationCheckers\IAuthorizationChecker.cs" />
+    <Compile Include="Getters\ContactViewModelGetter.cs" />
+    <Compile Include="Getters\OfferPhotosViewModelGetter.cs" />
+    <Compile Include="Getters\SupplierIndexViewModelGetter.cs" />
+    <Compile Include="Getters\SupplierOffersGetter.cs" />
+    <Compile Include="Getters\SupplierBrunchesGetter.cs" />
+    <Compile Include="Getters\SupplierWithBrunchesGetter.cs" />
+    <Compile Include="Getters\TypesByCategoryGetter.cs" />
+    <Compile Include="Getters\TypeViewModelGetter.cs" />
+    <Compile Include="IConverter.cs" />
+    <Compile Include="Getters\OfferListViewModelGetter.cs" />
+    <Compile Include="Converters\OfferConverter.cs" />
+    <Compile Include="OfferOrderOrgnizer.cs" />
+    <Compile Include="SupplierRegisterer.cs" />
+    <Compile Include="Converters\TypeConverter.cs" />
+    <Compile Include="Updaters\BranchViewModelUpdater.cs" />
+    <Compile Include="Updaters\CategoryViewModelUpdater.cs" />
+    <Compile Include="Updaters\SupplierViewModelUpdater.cs" />
+    <Compile Include="Updaters\TypeViewModelUpdater.cs" />
+    <Compile Include="Validators\AddBrunchVmValidator.cs" />
+    <Compile Include="Validators\IValidator.cs" />
+    <Compile Include="ViewModels\AddBrunchSupplierViewModel.cs" />
+    <Compile Include="ViewModels\AddBrunchViewModel.cs" />
+    <Compile Include="ViewModels\AddCustomerBranchOfferViewModel.cs" />
+    <Compile Include="ViewModels\AddNewContactViewModel.cs" />
+    <Compile Include="ViewModels\AddTypeViewModel.cs" />
+    <Compile Include="ViewModels\ApiBrunchDetailsViewModel.cs" />
+    <Compile Include="ViewModels\ApiBrunchVm.cs" />
+    <Compile Include="ViewModels\ApiOfferDetailsViewModel.cs" />
+    <Compile Include="ViewModels\ApiOfferViewModel.cs" />
+    <Compile Include="ViewModels\ApiSupplierDetailsViewModel.cs" />
+    <Compile Include="ViewModels\ApiSupplierViewModel.cs" />
+    <Compile Include="ViewModels\ApiBrunchViewModel.cs" />
+    <Compile Include="ViewModels\ASPUserViewModel.cs" />
+    <Compile Include="ViewModels\BrunchViewModel.cs" />
+    <Compile Include="ViewModels\OfferPhotoViewModel.cs" />
+    <Compile Include="ViewModels\OfferViewModel.cs" />
+    <Compile Include="Converters\SupplierConverter.cs" />
+    <Compile Include="Getters\ApiSupplierDetailsGetter.cs" />
+    <Compile Include="ViewModels\AdvertismentViewModel.cs" />
+    <Compile Include="ViewModels\BrunchDetailsViewModel.cs" />
+    <Compile Include="Getters\BrunchPhotosViewModelGetter.cs" />
+    <Compile Include="Getters\BrunchTypeViewModelGetter.cs" />
+    <Compile Include="ViewModels\CategoryDetailsViewModel.cs" />
+    <Compile Include="ViewModels\ContactViewModel.cs" />
+    <Compile Include="ViewModels\CustomerRegisterViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterCustomerResult.cs" />
+    <Compile Include="ViewModels\PhotoViewModel.cs" />
+    <Compile Include="ViewModels\SupplierDetailsViewModel.cs" />
+    <Compile Include="ViewModels\SupplierIndexViewModel.cs" />
+    <Compile Include="ViewModels\SupplierRegisterViewModel.cs" />
+    <Compile Include="ViewModels\TypeViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLibrary\CommonLibrary.csproj">
+      <Project>{0b1601c6-b98d-44e6-97a9-34f7940d6e5a}</Project>
+      <Name>CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{176afe7f-1d67-47e5-8b1e-ffa37186e420}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{f02bb60d-d535-4e54-b287-288721f3820f}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
